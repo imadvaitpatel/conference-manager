@@ -1,0 +1,41 @@
+1) Builder
+
+Classes: 
+- PartyBuilder, TalkBuilder, DiscussionBuilder builds event objects (Party, Talk, Discussion)
+- MessageBuilder builds message objects
+- RoomBuilder builds room objects
+- UserBuilder (for non-speakers), SpeakerBuilder (for speakers) builds user objects
+
+We used the Builder design pattern to build objects with a complicated
+creation process. For example, we need several different parameters
+to create events (name, date, room etc.), and users (username, password,
+account type). The creation of these objects used to be in our manager classes,
+but as we added more types of objects/features we felt it was necessary 
+to separate this process from the managers using this design pattern.
+
+Some of the parameters must be received in a specific order (event capacity
+must be asked before suggesting rooms for an event), so the Builder
+design pattern allows us to piece an object together one by one.
+
+We considered using a Factory instead of a Builder for events, but
+the different types of events have slightly different parameters and 
+functionality. Parties do not have a speaker parameter and none of the
+speaker methods apply, but Talks and Discussions do (Talks and 
+Discussions also have different speaker methods).
+
+2) Factory
+Classes:
+- UserControllerFactory creates a UserController object (extended by OrganizerController,
+Attendee Controller, SpeakerController, and VipController)
+
+Depending on the type of account the user has logged in to, a corresponding UserController
+is created to handle the user's actions. All the UserControllers function in the same way
+(prompting and prcoessing user input) but the specifics of what each one does 
+(which actions they allow the user to perform) varies. Because the functionality is consistent
+across all UserControllers, we use a Factory class to create a UserController based
+on the type of user logged in.
+
+The different UserControllers all have the same 
+parameters so a Factory class is able to create the desired object instead of requiring a 
+Builder. The UserControllers aren't really "customizable" like Rooms or Events so using a 
+Builder would not make much sense.

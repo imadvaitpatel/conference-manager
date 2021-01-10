@@ -1,0 +1,38 @@
+A list of features that we implemented for Phase 2:
+
+- All mandatory extensions and features.
+- Auto-saving
+- Allowing users to "mark as unread", delete, or archive messages after reading them.
+- Place star beside usernames to show unread messages.
+- Allow users to have the option of "download" a neatly formatted program/schedule for the conference.
+- When organizers are creating events, they can see a suggested list of rooms that fit the requirements of their event.
+- Have requirements/constraints on scheduling of events (Constraint by: room capacity, VIP,
+no time or room conflict, no event with same name, speaker is available if create event with speaker).
+- Organizers can get summary stats about the conference. (Includes: app traffic statistics,
+event enrollment statistics, top-3 most popular events, number of events scheduled of the
+most popular event type, top-3 most popular rooms).
+
+Sample Files:
+Here are the users which exist in the sample files.
+[The users are given in username (password) pairs]
+
+    Attendees:
+    - Rafael (pw12345)
+    - Advait (SuperSecure12)
+    - Ryota (Password4321)
+    - Robert (psswrd77)
+    - Ivy (SecurePassword2000)
+    - Jerrie (High_Security)
+
+    Speakers:
+    - JonathanCalver (pswd123)
+    - JustinTrudeau (GovSecurityPswd)
+    - AlanTuring (CompGeniusPswd)
+
+    VIP:
+    - LindseyShorser (54321pswd)
+    - FatemehMousavi (password998877)
+
+    Organizers:
+    - [DEFAULT] HeadOrganizer (1234)
+    - MericGertler (password1234)
