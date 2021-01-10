@@ -11,9 +11,6 @@ there will only be one account that has been created: an organizer account with 
 or you can choose to sign up a new account. All accounts created by signing up are 
 automatically attendee accounts. 
 
-We have provided sample .ser files with some pre-existing events and users. 
-You can log in as the HeadOrganizer to look at these created users/events.
-
 **DIFFERENT TYPES OF ACCOUNTS**
 
 There are organizer accounts, speaker accounts, attendee accounts, and VIP accounts.
