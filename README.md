@@ -1,6 +1,8 @@
-This program uses a text-based user interface. The user will be asked
-questions in order to proceed. To run the program, pull the repo and run the main method 
+To run the program, pull the repo and run the main method 
 in Main.java.
+
+This program uses a text-based user interface. The user will be asked
+questions in order to proceed. 
 
 **RUNNING FOR THE FIRST TIME**
 
